@@ -1,18 +1,17 @@
 import React from "react";
 
-function Search() {
+function Search({searchAnimals, updateSearchAnimals}) {
   return (
     <div className="searchbar">
-      <label className="search"htmlFor="search">Search Animals</label> <br/>
+      <label htmlFor="search">Search Animals:</label>
       <input
-         id="spaceDefault"
         type="text"
-        placeholder="Type a name to search..."
-        onChange={(e) => console.log("Searching...")}
-        className="input-text"
+        id="search"
+        value = {searchAnimals}
+        placeholder="Type name or type of animal..."
+        onChange={(e) => updateSearchAnimals(e.target.value)}
       />
     </div>
   );
 }
-
 export default Search;
