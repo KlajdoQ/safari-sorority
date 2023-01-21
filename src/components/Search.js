@@ -9,7 +9,7 @@ function Search({searchAnimals, updateSearchAnimals}) {
         type="text"
         id="search"
         value = {searchAnimals}
-        placeholder="Type a name to search..."
+        placeholder="Type name or type to search..."
         onChange={(e) => updateSearchAnimals(e.target.value)}
       />
     </div>

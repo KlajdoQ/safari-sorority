@@ -29,8 +29,18 @@ export default function SafariPage() {
     console.log(updateSearchAnimals)
   }
 
-  const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
-
+  // const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
+  const filteredAnimals = animals.filter(animal => {
+    if (animal === "") {
+      //if query is empty
+      return animal;
+    } else if (animal.name.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      //returns filtered array
+      return animal;
+    }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      return animal;
+    }
+  });
   return (
     <div>
         <Header />
