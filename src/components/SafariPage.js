@@ -22,11 +22,21 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
+  const [searchAnimals, setSearch] = useState("")
+
+  const updateSearchAnimals = (searchInput) => {
+    setSearch(searchInput)
+  }
+
+  const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
 
   return (
     <div>
         <Header />
-        <Search />
+        <Search 
+          updateSearchAnimals={updateSearchAnimals}
+          
+        />
         <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
         <PostsList animals={animals}/>
     </div>
