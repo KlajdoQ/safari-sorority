@@ -24,6 +24,7 @@ export default function SafariPage() {
     setAnimals(newData)
   }
   const [searchAnimals, setSearch] = useState("")
+  const [isLoading, setIsLoading] = useState("false")
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
@@ -41,7 +42,7 @@ export default function SafariPage() {
     }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
       return animal;
     }else{
-      alert("Animal Not Found")
+    
     }
   });
   return (
