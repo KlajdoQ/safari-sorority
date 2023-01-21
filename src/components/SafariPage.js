@@ -3,6 +3,7 @@ import Header from './Header/Header'
 import Search from './Search'
 import NewAnimalForm from "./NewAnimalForm"
 import PostsList from './PostsList'
+import { Switch, Route } from "react-router-dom"
 
 
 export default function SafariPage() {
@@ -22,13 +23,50 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
+  const [searchAnimals, setSearch] = useState("")
 
+  const updateSearchAnimals = (searchInput) => {
+    setSearch(searchInput)
+    console.log(updateSearchAnimals)
+  }
+
+  // const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
+  const filteredAnimals = animals.filter(animal => {
+    if (animal === "") {
+      //if query is empty
+      return animal;
+    } else if (animal.name.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      //returns filtered array
+      return animal;
+    }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      return animal;
+    }else{
+      alert("Animal Not Found")
+    }
+  });
   return (
     <div>
+      <Header />
+      <Switch>
+      <Route exact path="/">
+          <PostsList animals={animals}/>
+        </Route>
+        <Route path="/search">
+          <Search />
+          <PostsList animals={animals}/>
+        </Route>
+        <Route path="/new">
+          <NewAnimalForm addNewAnimal={addNewAnimal}/>
+        </Route>
+      </Switch>
         <Header />
-        <Search />
+        <Search 
+          searchAnimals={searchAnimals}
+          updateSearchAnimals={updateSearchAnimals}
+          
+        />
         <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
-        <PostsList animals={animals}/>
+        <PostsList animals={filteredAnimals}/>
     </div>
   )
 }
