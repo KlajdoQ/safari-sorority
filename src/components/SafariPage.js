@@ -26,6 +26,7 @@ export default function SafariPage() {
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
+    console.log(updateSearchAnimals)
   }
 
   const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
@@ -34,11 +35,12 @@ export default function SafariPage() {
     <div>
         <Header />
         <Search 
+          searchAnimals={searchAnimals}
           updateSearchAnimals={updateSearchAnimals}
           
         />
         <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
-        <PostsList animals={animals}/>
+        <PostsList animals={filteredAnimals}/>
     </div>
   )
 }
