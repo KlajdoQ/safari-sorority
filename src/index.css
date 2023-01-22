@@ -40,6 +40,16 @@ code {
 .search {
   font-size:40px;
 }
+#clearBtn {
+  cursor: pointer;
+}
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: outside;
+  place-items: center;
+}
 .input-text {
   width:300px;
   border:1px solid lightgray;
