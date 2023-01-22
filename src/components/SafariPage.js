@@ -25,7 +25,7 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
-  const [searchAnimals, setSearch] = useState("")
+ 
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
@@ -49,7 +49,7 @@ export default function SafariPage() {
     }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
       return animal;
     }else{
-      alert("Animal Not Found")
+     
     }
   });
   return (
@@ -61,7 +61,7 @@ export default function SafariPage() {
             searchAnimals={searchAnimals}
 
             updateSearchAnimals={updateSearchAnimals}
-            className='search-animals'
+            
           />
           <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
         </Route>
