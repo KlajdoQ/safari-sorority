@@ -9,13 +9,13 @@ export default function Header() {
         <img src={logo} alt="logo" className="ss-logo"/>
         <img src={name} alt="name" className="ss-name"/>
         <nav>
-          <Link to="/">
+          <Link className="navLinks" to="/">
             View Animals
           </Link>
-          <Link to="/search">
-            Search
+          <Link className="navLinks" to="/pictures">
+            Pictures
           </Link>
-          <Link to="/new">
+          <Link className="navLinks" to="/new">
             Add Animal
           </Link>
         </nav>

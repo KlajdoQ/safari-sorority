@@ -3,11 +3,13 @@ import Header from './Header/Header'
 import Search from './Search'
 import NewAnimalForm from "./NewAnimalForm"
 import PostsList from './PostsList'
+import Pictures from './Pictures'
 import { Switch, Route } from "react-router-dom"
 
 
 export default function SafariPage() {
   const [animals, setAnimals] = useState([])
+  const [searchAnimals, setSearch] = useState("")
 
   const url = 'http://localhost:3000/animals'
   useEffect(() => {
@@ -24,13 +26,18 @@ export default function SafariPage() {
     setAnimals(newData)
   }
   const [searchAnimals, setSearch] = useState("")
-  const [isLoading, setIsLoading] = useState("false")
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
-    console.log(updateSearchAnimals)
   }
 
+  function addLikes(likesToAdd) {
+    setAnimals(animals.map(animal => animal.id === likesToAdd.id? likesToAdd : animal))
+  }
+
+  function deleteAnimal(animalToDelete) {
+    setAnimals(animals.filter(animal => animal.id !== animalToDelete.id))
+  }
   // const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
   const filteredAnimals = animals.filter(animal => {
     if (animal === "") {
@@ -42,7 +49,7 @@ export default function SafariPage() {
     }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
       return animal;
     }else{
-    
+      alert("Animal Not Found")
     }
   });
   return (
@@ -50,13 +57,16 @@ export default function SafariPage() {
       <Header />
       <Switch>
       <Route exact path="/">
-          <PostsList animals={filteredAnimals}/>
-        </Route>
-        <Route path="/search">
-          <Search 
+          <Search
             searchAnimals={searchAnimals}
-            updateSearchAnimals={updateSearchAnimals}  
+
+            updateSearchAnimals={updateSearchAnimals}
+            className='search-animals'
           />
+          <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
+        </Route>
+        <Route path="/pictures">
+          <Pictures />
         </Route>
         <Route path="/new">
           <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
