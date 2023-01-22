@@ -59,9 +59,9 @@ export default function SafariPage() {
       <Route exact path="/">
           <Search
             searchAnimals={searchAnimals}
-
+            animals ={animals}
             updateSearchAnimals={updateSearchAnimals}
-            
+            filteredAnimals = {filteredAnimals}
           />
           <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes} url={url}/>
         </Route>

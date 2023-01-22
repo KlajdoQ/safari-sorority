@@ -55,7 +55,9 @@ code {
   /* background-color: #0000EE; */
  
 }
-
+ul li {
+  font-size: 20px;
+} 
 /* .searchIcon {
   height: 60px;
   width: 50px;
