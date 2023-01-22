@@ -192,12 +192,30 @@ nav .navLinks:active {
 
 /* comments css */
 
-.commment li {
-  background-color: white;
+.comment  {
+  background-color:white;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
+  width: 150px;
+  height:25px;
+
+  border:1px solid orange;
+  overflow: hidden;
+  box-shadow:0 5px 5px rgba(0,0,0,0.5)
 }
 
+
 /* end of comments */
+
+
+/* end of navar css */
+.image {
+  width:300px;
+  margin:10px;
+}
+.Pictures {
+  display:inline-block;
+  margin:30px;
+}
 

@@ -3,7 +3,7 @@ import CommentSection from "./CommentSection"
 import NewComments from "./NewComments"
 
 
-export default function Posts({animal,addLikes,deleteAnimal}) {
+ function Posts({animal,addLikes,deleteAnimal, url}) {
   const{name, type, description, id,likes,image} = animal
   const handleLikes = () => {
     fetch(`http://localhost:3000/animals/${id}`,{
@@ -33,7 +33,7 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
 
 
    const addNewComment = (newComment) => {
-      const newData = [...comments, ...newComment];
+      const newData = [...comments, ...newComment.comments];
       setComments(newData)
    }
 
@@ -48,7 +48,9 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
           <button className='Delete' onClick={handleDelete}>Delete</button>
         </div>
       <CommentSection comments={comments}/>
-      <NewComments id={id} addNewComment={addNewComment}/>
+      <NewComments id={id} addNewComment={addNewComment} url={url}/>
     </li>
   )
 }
+
+export default Posts
