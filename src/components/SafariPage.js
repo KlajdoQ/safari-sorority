@@ -16,7 +16,7 @@ export default function SafariPage() {
     <div>
         <Header />
         <Search />
-        <NewAnimalForm />
+        <NewAnimalForm addNewAnimal={addNewAnimal}/>
         <PostsList />
     </div>
   )
