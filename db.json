@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "json-server",
+      "type": "",
       "description": "typicode",
       "image":"",
       "likes":0
