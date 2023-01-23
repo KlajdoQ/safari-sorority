@@ -1,9 +1,10 @@
-import SafariPage from './components/SafariPage'
 import Search from './components/Search'
+import Header from './Header/Header'
+
 function App() {
   return (
     <div className="app">
-      <SafariPage />
+      <Header />
       <Search/>
     </div>
   );
