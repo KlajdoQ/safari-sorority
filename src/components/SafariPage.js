@@ -6,7 +6,12 @@ export default function SafariPage() {
 
   // ADDING NEW ANIMAL (FORM DATA CB FUNCTION)
 
-  //const addNewAnimal =
+  const addNewAnimal = newAnimal => {
+   //  const newData = [...whateverDataIsCalled, newAnimal];
+    // setWhateversetteriscalled(newData)
+  }
+
+
   return (
     <>
     <h1>Safari Sorority</h1>

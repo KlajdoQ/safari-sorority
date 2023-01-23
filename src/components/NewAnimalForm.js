@@ -29,12 +29,16 @@ const handleSubmit = (e) => {
     }
 
     addNewAnimal(newAnimal)
+    setFormData(initialData)
 }
 
     return (
         <div className="new-animal-form">
             <h2>New Animal</h2>
-            <form>
+            <form onSubmit={(e) => {
+                console.log("submitting form...");
+                handleSubmit(e);
+            }}>
                 <input type="text" name="name" placeholder="Animal Name" value={formData.name} onChange={handleFormData} />
                 <input type="text" name="image" placeholder="Animal Image URL" value={formData.image} onChange={handleFormData} />
                 <input type="text" name="description" placeholder="Animal Description" value={formData.description} onChange={handleFormData} />
