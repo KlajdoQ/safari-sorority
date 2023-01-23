@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header/Header'
 import Search from './Search'
-import Form from './Form'
+import NewAnimalForm "./NewAnimalForm"
 import PostsList from './PostsList'
 
 export default function SafariPage() {
@@ -9,7 +9,7 @@ export default function SafariPage() {
     <div>
         <Header />
         <Search />
-        <Form />
+        <NewAnimalForm />
         <PostsList />
     </div>
   )
