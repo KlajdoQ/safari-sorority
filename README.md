@@ -1,1 +1,1 @@
-# safari-sorority
+# Safari Sorority
