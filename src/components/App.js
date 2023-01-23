@@ -1,4 +1,4 @@
-import SafariPage from './components/SafariPage'
+import SafariPage from './SafariPage'
 
 function App() {
   return (
