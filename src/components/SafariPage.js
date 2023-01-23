@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from './Header/Header'
 
 export default function SafariPage() {
   return (
-    <h1>Safari Sorority</h1>
+    <div>
+        <Header />
+    </div>
   )
 }

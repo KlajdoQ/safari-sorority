@@ -1,0 +1,11 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "description": "typicode",
+      "image":"",
+      "likes":0
+    }
+  ]
+}
