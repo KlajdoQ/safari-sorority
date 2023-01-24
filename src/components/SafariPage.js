@@ -16,17 +16,17 @@ export default function SafariPage() {
 
 
 
-  // ADDING NEW ANIMAL (FORM CB FUNCTION)
-  // const addNewAnimal = (newAnimal) => {
-  //   const newData = [...whatever-the-name-of-the-og-data-is, newAnimal]
-  //   whatever-the-name-of-the-setter-func-is(newData)
-  // }
+ // ADDING NEW ANIMAL (FORM CB FUNCTION)
+  const addNewAnimal = (newAnimal) => {
+    const newData = [...animals, newAnimal]
+    setAnimals(newData)
+  }
 
   return (
     <div>
         <Header />
         <Search />
-        <NewAnimalForm />
+        <NewAnimalForm addNewAnimal={addNewAnimal}/>
         <PostsList animals={animals}/>
     </div>
   )
