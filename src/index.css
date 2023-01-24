@@ -29,3 +29,45 @@ code {
 .ss-name {
   height:80px;
 }
+
+.animal-image {
+  width: 300px;
+  
+}
+
+.name {
+  font: bolder;
+  font-size: x-large;
+  font-style: italic;
+  
+}
+
+.type {
+  font: bold;
+  font-size: 20px;
+  
+}
+
+.description{
+  font-size: medium;
+}
+
+.post-comment-btn{
+  background-color: orange;
+}
+.comment__textarea{
+  width: 200px;
+}
+.Likes {
+  background-color: orange;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: medium;
+  
+}
+
+.new-animal-form{
+  margin-left: 320px;
+}
+
