@@ -25,12 +25,17 @@ export default function SafariPage() {
 function addLikes(newLikes) {
   setAnimals(animals.map(animal => animal.id === newLikes.id? newLikes : animal))
 }
+
+
+function deleteAnimal(animalToDelete) {
+  setAnimals(animals.filter(animal =>animal.id !== animalToDelete.id))
+}
   return (
     <div>
         <Header />
         <Search />
         <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
-        <PostsList animals={animals} addLikes={addLikes}/>
+        <PostsList animals={animals} addLikes={addLikes} deleteAnimal={deleteAnimal}/>
     </div>
   )
 }
