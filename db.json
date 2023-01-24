@@ -2,10 +2,10 @@
   "animals": [
     {
       "id": 1,
-      "name": "json-server",
-      "type": "",
-      "description": "typicode",
-      "image":"",
+      "name": "Bearded Dragon",
+      "type": "Reptiles",
+      "description": "They have a broad, triangular head, round bodies, stout legs, and robust tails.",
+      "image":"image.png",
       "likes":0
     }
   ]
