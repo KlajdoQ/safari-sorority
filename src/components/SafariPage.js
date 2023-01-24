@@ -8,8 +8,9 @@ import PostsList from './PostsList'
 export default function SafariPage() {
   const [animals, setAnimals] = useState([])
 
+  const url = 'http://localhost:3000/animals'
   useEffect(() => {
-    fetch('http://localhost:3000/animals')
+    fetch(url)
     .then(res => res.json())
     .then(setAnimals)
   }, [])
@@ -21,13 +22,15 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
-
+function addLikes(newLikes) {
+  setAnimals(animals.map(animal => animal.id === newLikes.id? newLikes : animal))
+}
   return (
     <div>
         <Header />
         <Search />
-        <NewAnimalForm addNewAnimal={addNewAnimal}/>
-        <PostsList animals={animals}/>
+        <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
+        <PostsList animals={animals} addLikes={addLikes}/>
     </div>
   )
 }

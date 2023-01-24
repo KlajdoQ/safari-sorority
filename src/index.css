@@ -29,28 +29,61 @@ code {
 .ss-name {
   height:80px;
 }
-
-.animal-image {
-  width: 300px;
+                     /*===Search Bar ===*/
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:20px;
+}
+.search {
+  font-size:40px;
+}
+.input-text {
+  width:300px;
+  border:1px solid lightgray;
+  padding-left:20px;
+  height:35px;
+  border-radius:20px;
+  box-shadow:0 5px 5px rgba(0,0,0,0.3);
+  outline: none;
   
 }
+                     /*=== Post ===*/
 
+.animal-image {
+  width: 400px;
+}
+.Posts {
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.posts {
+  width:400px;
+  border:1px solid lightgray;
+  margin:20px;
+  border-radius: 20px;
+  overflow: hidden;;
+}
 .name {
-  font: bolder;
-  font-size: x-large;
   font-style: italic;
-  
+  padding-left:20px;
+  line-height: 10px;
 }
 
 .type {
-  font: bold;
-  font-size: 20px; 
-}
-.posts {
-  list-style: none;
+  font-size: 20px;
+  padding-left:20px;
+  color:rgb(172, 166, 166);
+  margin-top:-5px;
 }
 .description{
   font-size: medium;
+  padding-left:20px;
 }
 
 .post-comment-btn{
@@ -65,10 +98,40 @@ code {
   padding-left: 15px;
   padding-right: 15px;
   font-size: medium;
-  
+}
+.likes-delete {
+  display:flex ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.Delete {
+  padding:10px;
+  background-color: orange;
+}
+/* Form css */
+.add-animal-btn {
+  margin:10px;
+  border:none;
+  padding:10px 20px;
+  font-weight: 600;
+}
+#spaceDefault {
+  margin-bottom: 20px;
 }
 
-.new-animal-form{
-  margin-left: 320px;
+.new-animal-form {
+  background-color: rgb(229, 120, 65);
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  border-radius: 5px;
 }
 
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* end of form css */
