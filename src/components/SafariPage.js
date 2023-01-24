@@ -3,6 +3,7 @@ import Header from './Header/Header'
 import Search from './Search'
 import NewAnimalForm from "./NewAnimalForm"
 import PostsList from './PostsList'
+import { Switch, Route } from "react-router-dom"
 
 
 export default function SafariPage() {
@@ -24,10 +25,19 @@ export default function SafariPage() {
 
   return (
     <div>
-        <Header />
-        <Search />
-        <NewAnimalForm addNewAnimal={addNewAnimal}/>
-        <PostsList animals={animals}/>
+      <Header />
+      <Switch>
+      <Route exact path="/">
+          <PostsList animals={animals}/>
+        </Route>
+        <Route path="/search">
+          <Search />
+          <PostsList animals={animals}/>
+        </Route>
+        <Route path="/new">
+          <NewAnimalForm addNewAnimal={addNewAnimal}/>
+        </Route>
+      </Switch>
     </div>
   )
 }
