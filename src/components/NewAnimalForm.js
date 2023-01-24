@@ -32,8 +32,15 @@ function NewAnimalForm({ addNewAnimal, url }) {
         }
 
         // POST REQUEST
-        fetch()
-        addNewAnimal(newAnimal)
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newAnimal)
+        })
+        .then(res => res.json())
+        .then(addNewAnimal)
         setFormData(initialData)
     }
 
