@@ -3,12 +3,12 @@ import React from "react";
 function Search() {
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search Animals:</label>
+      <label className="search"htmlFor="search">Search Animals</label>
       <input
         type="text"
-        id="search"
         placeholder="Type a name to search..."
         onChange={(e) => console.log("Searching...")}
+        className="input-text"
       />
     </div>
   );
