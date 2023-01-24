@@ -22,20 +22,47 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
-function addLikes(newLikes) {
-  setAnimals(animals.map(animal => animal.id === newLikes.id? newLikes : animal))
-}
+  const [searchAnimals, setSearch] = useState("")
 
+  const updateSearchAnimals = (searchInput) => {
+    setSearch(searchInput)
+    console.log(updateSearchAnimals)
+  }
 
-function deleteAnimal(animalToDelete) {
-  setAnimals(animals.filter(animal =>animal.id !== animalToDelete.id))
-}
+  function addLikes(likesToAdd) {
+    setAnimals(animals.map(animal => animal.id === likesToAdd.id? likesToAdd : animal))
+  }
+
+  function deleteAnimal(animalToDelete) {
+    setAnimals(animals.filter(animal => animal.id !== animalToDelete.id))
+  }
+  // const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
+  const filteredAnimals = animals.filter(animal => {
+    if (animal === "") {
+      //if query is empty
+      return animal;
+    } else if (animal.name.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      //returns filtered array
+      return animal;
+    }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      return animal;
+    }else{
+      alert("Animal Not Found")
+    }
+  });
   return (
     <div>
         <Header />
-        <Search />
+        <Search 
+          searchAnimals={searchAnimals}
+          updateSearchAnimals={updateSearchAnimals}
+          
+        />
         <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
-        <PostsList animals={animals} addLikes={addLikes} deleteAnimal={deleteAnimal}/>
+
+        <PostsList animals={filteredAnimals} addLikes={addLikes} deleteAnimal={deleteAnimal}/>
+
+
     </div>
   )
 }
