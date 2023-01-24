@@ -8,8 +8,9 @@ import PostsList from './PostsList'
 export default function SafariPage() {
   const [animals, setAnimals] = useState([])
 
+  const url = 'http://localhost:3000/animals'
   useEffect(() => {
-    fetch('http://localhost:3000/animals')
+    fetch(url)
     .then(res => res.json())
     .then(setAnimals)
   }, [])
@@ -26,7 +27,7 @@ export default function SafariPage() {
     <div>
         <Header />
         <Search />
-        <NewAnimalForm addNewAnimal={addNewAnimal}/>
+        <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
         <PostsList animals={animals}/>
     </div>
   )

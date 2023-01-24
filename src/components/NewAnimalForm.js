@@ -2,8 +2,8 @@
 import React, { useState } from "react"
 
 
-function NewAnimalForm({ addNewAnimal }) {
-    
+function NewAnimalForm({ addNewAnimal, url }) {
+
     const initialData = {
         name: "",
         type: "",
@@ -11,7 +11,7 @@ function NewAnimalForm({ addNewAnimal }) {
         image: "",
         likes: 0,
     }
-    
+
     const [formData, setFormData] = useState(initialData)
 
     function handleFormData(e) {
@@ -31,7 +31,8 @@ function NewAnimalForm({ addNewAnimal }) {
 
         }
 
-        // POST REQUEST HERE 
+        // POST REQUEST
+        fetch()
         addNewAnimal(newAnimal)
         setFormData(initialData)
     }
