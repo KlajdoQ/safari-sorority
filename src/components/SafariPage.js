@@ -26,7 +26,6 @@ export default function SafariPage() {
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
-    console.log(updateSearchAnimals)
   }
 
   function addLikes(likesToAdd) {
@@ -46,8 +45,6 @@ export default function SafariPage() {
       return animal;
     }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
       return animal;
-    }else{
-      alert("Animal Not Found")
     }
   });
   return (
