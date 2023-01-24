@@ -4,7 +4,7 @@
 
 The Safari Sorority is designed for users to create, search through, and view the various social media posts made for any animal you can think of!  Focusing on frontend development, this project was designed to apply our team's skills working with React in a fun and creative way.
 
-## Description
+## Description hi
 
 This application allows users to first view the posts made to Safari Sorority.  With each post, the user is able to see:
 * the animal's name
