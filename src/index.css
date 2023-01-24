@@ -30,48 +30,44 @@ code {
   height:80px;
 }
 
-/* === Search Bar ===*/
-.searchbar {
-  margin:20px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.animal-image {
+  width: 300px;
+  
 }
-.search {
-  font-size: 30px;
-  font-weight: 600;
-  margin:20px;
+
+.name {
+  font: bolder;
+  font-size: x-large;
+  font-style: italic;
+  
 }
-.input-text {
-  border:1px solid lightgray;
-  height:30px;
-  padding:5px;
-  width:200px;
-  border-radius: 20px;
-  box-shadow:0 5px 5px rgba(0,0,0,0.3);
-  outline: none;
-  padding-left:10px;
+
+.type {
+  font: bold;
+  font-size: 20px;
+  
 }
-.form {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.description{
+  font-size: medium;
 }
-.input-field {
-  margin:5px;
-  width:300px;
-  height:25px;
+
+.post-comment-btn{
+  background-color: orange;
 }
-.likes-field {
-  width:70px;
+.comment__textarea{
+  width: 200px;
 }
-.submitBtn {
-  padding:10px;
-  background-color:  rgb(229, 120, 65);
-  border:none;
-  color:white;
-  font-size:16px;
-  font-weight: bold;
+.Likes {
+  background-color: orange;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: medium;
+  
 }
+
+.new-animal-form{
+  margin-left: 320px;
+}
+

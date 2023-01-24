@@ -31,6 +31,7 @@ function NewAnimalForm({ addNewAnimal }) {
 
         }
 
+        // POST REQUEST HERE 
         addNewAnimal(newAnimal)
         setFormData(initialData)
     }
