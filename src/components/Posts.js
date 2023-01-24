@@ -17,7 +17,7 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
   }
 
   function handleDelete() {
-    fetch(`http://localhost:3001/animals/${id}`, {
+    fetch(`http://localhost:3000/animals/${id}`, {
       method: "DELETE",
     })
       .then((r) => r.json())
