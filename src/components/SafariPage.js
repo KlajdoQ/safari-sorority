@@ -8,7 +8,7 @@ import { Switch, Route } from "react-router-dom"
 
 
 export default function SafariPage() {
-  const [animals, setAnimals] = useState([{comments:[], name: ""}])
+  const [animals, setAnimals] = useState([])
   const [searchAnimals, setSearch] = useState("")
 
   const url = 'http://localhost:3000/animals'
@@ -56,12 +56,9 @@ export default function SafariPage() {
       <Route exact path="/">
           <Search
             searchAnimals={searchAnimals}
-<<<<<<< HEAD
+
             updateSearchAnimals={updateSearchAnimals}
             className='search-animals'
-=======
-            updateSearchAnimals={updateSearchAnimals}  
->>>>>>> 0591a26d41f175f40a6498e99b99d3c665d0e099
           />
           <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
         </Route>
