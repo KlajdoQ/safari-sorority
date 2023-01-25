@@ -3,6 +3,7 @@ import Header from './Header/Header'
 import Search from './Search'
 import NewAnimalForm from "./NewAnimalForm"
 import PostsList from './PostsList'
+import Pictures from './Pictures'
 import { Switch, Route } from "react-router-dom"
 
 
@@ -56,11 +57,11 @@ export default function SafariPage() {
           <Search 
             searchAnimals={searchAnimals}
             updateSearchAnimals={updateSearchAnimals}  
-            className='search-animals'
           />
           <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
         </Route>
-        <Route path="/search">
+        <Route path="/pictures">
+          <Pictures />
         </Route>
         <Route path="/new">
           <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>

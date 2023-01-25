@@ -12,8 +12,8 @@ export default function Header() {
           <Link className="navLinks" to="/">
             View Animals
           </Link>
-          <Link className="navLinks" to="/search">
-            Search
+          <Link className="navLinks" to="/pictures">
+            Pictures
           </Link>
           <Link className="navLinks" to="/new">
             Add Animal
