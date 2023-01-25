@@ -170,12 +170,16 @@ nav .navLinks:active {
 /* comments css */
 
 .comment  {
-  background-color:rgb(172, 166, 166);
+  background-color:white;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
   width: 150px;
-  height:25px
+  height:25px;
+
+  border:1px solid orange;
+  overflow: hidden;
+  box-shadow:0 5px 5px rgba(0,0,0,0.5)
 }
 
 
