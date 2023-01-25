@@ -46,6 +46,8 @@ function NewAnimalForm({ addNewAnimal, url }) {
     }
 
     return (
+        <div className="form">
+      
         <div className="new-animal-form">
             <h2 id="form-heading">New Animal 🐾</h2>
             <form  className="form"onSubmit={(e) => {
@@ -58,6 +60,8 @@ function NewAnimalForm({ addNewAnimal, url }) {
                 <input id="spaceDefault" className="input-field" type="text" name="image" placeholder="Animal Image URL" value={formData.image} onChange={handleFormData} /> <br/>
                 <button id="spaceDefault" className="submitBtn" type="submit">Add New Animal</button>
             </form>
+        </div>
+           
         </div>
     )
 }

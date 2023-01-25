@@ -27,9 +27,15 @@ export default function SafariPage() {
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
-    console.log(updateSearchAnimals)
   }
 
+  function addLikes(likesToAdd) {
+    setAnimals(animals.map(animal => animal.id === likesToAdd.id? likesToAdd : animal))
+  }
+
+  function deleteAnimal(animalToDelete) {
+    setAnimals(animals.filter(animal => animal.id !== animalToDelete.id))
+  }
   // const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
   const filteredAnimals = animals.filter(animal => {
     if (animal === "") {
@@ -40,8 +46,6 @@ export default function SafariPage() {
       return animal;
     }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
       return animal;
-    }else{
-      alert("Animal Not Found")
     }
   });
   return (
@@ -49,13 +53,14 @@ export default function SafariPage() {
       <Header />
       <Switch>
       <Route exact path="/">
-          <PostsList animals={filteredAnimals}/>
-        </Route>
-        <Route path="/search">
           <Search 
             searchAnimals={searchAnimals}
             updateSearchAnimals={updateSearchAnimals}  
+            className='search-animals'
           />
+          <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
+        </Route>
+        <Route path="/search">
         </Route>
         <Route path="/new">
           <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
