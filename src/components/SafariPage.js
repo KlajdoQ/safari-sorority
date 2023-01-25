@@ -49,24 +49,18 @@ export default function SafariPage() {
       <Header />
       <Switch>
       <Route exact path="/">
-          <PostsList animals={animals}/>
+          <PostsList animals={filteredAnimals}/>
         </Route>
         <Route path="/search">
-          <Search />
-          <PostsList animals={animals}/>
+          <Search 
+            searchAnimals={searchAnimals}
+            updateSearchAnimals={updateSearchAnimals}  
+          />
         </Route>
         <Route path="/new">
-          <NewAnimalForm addNewAnimal={addNewAnimal}/>
+          <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
         </Route>
       </Switch>
-        <Header />
-        <Search 
-          searchAnimals={searchAnimals}
-          updateSearchAnimals={updateSearchAnimals}
-          
-        />
-        <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
-        <PostsList animals={filteredAnimals}/>
     </div>
   )
 }
