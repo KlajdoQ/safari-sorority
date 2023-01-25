@@ -29,7 +29,7 @@ code {
 .ss-name {
   height:80px;
 }
-                     /*===Search Bar ===*/p
+                     /*===Search Bar ===*/
 .searchbar {
   display: flex;
   align-items: center;
@@ -48,6 +48,7 @@ code {
   border-radius:20px;
   box-shadow:0 5px 5px rgba(0,0,0,0.3);
   outline: none;
+  margin-top:20px;
 }
 
                      /*=== Post ===*/
@@ -149,7 +150,7 @@ nav .navLinks {
   display: inline-block;
   margin: 1rem 1rem;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size:17px;
   color: whitesmoke;
   border-bottom: 2px solid whitesmoke;
   transition: 0.1s;
@@ -164,3 +165,11 @@ nav .navLinks:active {
 
 
 /* end of navar css */
+.image {
+  width:300px;
+  margin:10px;
+}
+.Pictures {
+  display:inline-block;
+  margin:30px;
+}
