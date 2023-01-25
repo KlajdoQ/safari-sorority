@@ -96,15 +96,15 @@ nav .navLinks {
   margin: 1rem 2rem;
   text-decoration: none;
   font-size: 1.2em;
-  color: brown;
-  border-bottom: 2px solid brown;
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
   transition: 0.1s;
 }
 
 nav .navLinks:hover,
 nav .navLinks:active {
-  color: rgb(129, 186, 186) ;
-  border-bottom: 2px solid rgb(129, 186, 186) ;
+  color: brown ;
+  border-bottom: 2px solid brown ;
 }
 
 
