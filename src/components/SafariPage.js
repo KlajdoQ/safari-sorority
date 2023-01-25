@@ -9,8 +9,9 @@ import { Switch, Route } from "react-router-dom"
 export default function SafariPage() {
   const [animals, setAnimals] = useState([])
 
+  const url = 'http://localhost:3000/animals'
   useEffect(() => {
-    fetch('http://localhost:3000/animals')
+    fetch(url)
     .then(res => res.json())
     .then(setAnimals)
   }, [])
@@ -22,9 +23,30 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
+  const [searchAnimals, setSearch] = useState("")
 
+  const updateSearchAnimals = (searchInput) => {
+    setSearch(searchInput)
+    console.log(updateSearchAnimals)
+  }
+
+  // const filteredAnimals = animals.filter(animal => animal.name.toLowerCase().includes(searchAnimals.toLowerCase()))
+  const filteredAnimals = animals.filter(animal => {
+    if (animal === "") {
+      //if query is empty
+      return animal;
+    } else if (animal.name.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      //returns filtered array
+      return animal;
+    }else if (animal.type.toLowerCase().includes(searchAnimals.toLowerCase())) {
+      return animal;
+    }else{
+      alert("Animal Not Found")
+    }
+  });
   return (
     <div>
+<<<<<<< HEAD
       <Header />
       <Switch>
       <Route exact path="/">
@@ -38,6 +60,16 @@ export default function SafariPage() {
           <NewAnimalForm addNewAnimal={addNewAnimal}/>
         </Route>
       </Switch>
+=======
+        <Header />
+        <Search 
+          searchAnimals={searchAnimals}
+          updateSearchAnimals={updateSearchAnimals}
+          
+        />
+        <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
+        <PostsList animals={filteredAnimals}/>
+>>>>>>> 1cdfb2cfbba7814b67de1ee2845c9769d6e93a7b
     </div>
   )
 }

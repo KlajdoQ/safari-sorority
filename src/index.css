@@ -32,20 +32,20 @@ code {
 
 .animal-image {
   width: 300px;
-  
+
 }
 
 .name {
   font: bolder;
   font-size: x-large;
   font-style: italic;
-  
+
 }
 
 .type {
   font: bold;
   font-size: 20px;
-  
+
 }
 
 .description{
@@ -64,10 +64,26 @@ code {
   padding-left: 15px;
   padding-right: 15px;
   font-size: medium;
-  
+
 }
 
+/* Form css */
 .new-animal-form{
   margin-left: 320px;
 }
 
+
+#spaceDefault {
+  margin-bottom: 20px;
+}
+
+.new-animal-form {
+  background-color: rgb(229, 120, 65);
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/* end of form css */
