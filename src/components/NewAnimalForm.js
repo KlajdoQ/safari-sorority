@@ -10,6 +10,7 @@ function NewAnimalForm({ addNewAnimal, url }) {
         description: "",
         image: "",
         likes: 0,
+        comments: []
     }
 
     const [formData, setFormData] = useState(initialData)
@@ -28,7 +29,7 @@ function NewAnimalForm({ addNewAnimal, url }) {
             description: formData.description,
             image: formData.image,
             likes: formData.likes,
-
+            comments: []
         }
 
         // POST REQUEST
@@ -47,7 +48,7 @@ function NewAnimalForm({ addNewAnimal, url }) {
 
     return (
         <div className="form">
-      
+
         <div className="new-animal-form">
             <h2 id="form-heading">New Animal 🐾</h2>
             <form  className="form"onSubmit={(e) => {
@@ -61,7 +62,7 @@ function NewAnimalForm({ addNewAnimal, url }) {
                 <button id="spaceDefault" className="submitBtn" type="submit">Add New Animal</button>
             </form>
         </div>
-           
+
         </div>
     )
 }

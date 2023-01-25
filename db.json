@@ -1,6 +1,7 @@
 {
   "animals": [
     {
+      "0": "oh my goodness",
       "id": 2,
       "name": "Bunny",
       "type": "Mammal",
@@ -35,22 +36,6 @@
         "omg such a cute Bunny",
         "cutie pie"
       ]
-    },
-    {
-      "name": "test",
-      "type": "test",
-      "description": "test",
-      "image": "teset",
-      "likes": 0,
-      "id": 5
-    },
-    {
-      "name": "test",
-      "type": "tese",
-      "description": "set",
-      "image": "ste",
-      "likes": 0,
-      "id": 6
     }
   ]
 }

@@ -165,20 +165,23 @@ nav .navLinks:active {
 /* end of navbar css */
 
 
-<<<<<<< HEAD
+
 
 /* comments css */
 
-.commment li {
-  background-color: white;
+.comment  {
+  background-color:rgb(172, 166, 166);
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
+  width: 150px;
+  height:25px
 }
+
 
 /* end of comments */
 
-=======
+
 /* end of navar css */
 .image {
   width:300px;
@@ -188,4 +191,4 @@ nav .navLinks:active {
   display:inline-block;
   margin:30px;
 }
->>>>>>> 0591a26d41f175f40a6498e99b99d3c665d0e099
+

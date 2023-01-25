@@ -2,9 +2,9 @@ import React from "react"
 
 function Comment({comment}) {
     return (
-        <li className="comment">
+        <div className="comment">
             {comment}
-        </li>
+        </div>
     )
 }
 

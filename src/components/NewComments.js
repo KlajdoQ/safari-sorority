@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 
 
-function NewComments({id, addNewComment}) {
+function NewComments({id, addNewComment, url}) {
     const [createComment, setCreateComment] = useState('');
 
    function handleCreateComment(e) {
@@ -11,23 +11,30 @@ function NewComments({id, addNewComment}) {
    const handleCommentSubmit = (e) => {
     e.preventDefault();
 
-    const newComment = {
-        comments: [
-            createComment
-        ]
-    }
+    const newComment = [createComment]
 
     addNewComment(newComment)
+    
+    fetch(`${url}/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newComment)
+    })
+    .then(res => res.json())
+    .then(addNewComment)
 
-    // TEXTAREA RESET
+
+    // INPUT RESET
     setCreateComment('')
 }
 
     return (
         <div className="comment__container">
             <form onSubmit={handleCommentSubmit}>
-                <textarea
-                    className="comment__textarea"
+                <input
+                    className="comment_input"
                     type="text"
                     name="comment"
                     placeholder="Add a comment..."

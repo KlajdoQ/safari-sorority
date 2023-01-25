@@ -3,7 +3,7 @@ import Posts from "./Posts"
 
 
 
-export default function PostsList({animals,addLikes,deleteAnimal}) {
+export default function PostsList({animals,addLikes,deleteAnimal, url}) {
 
   return (
     // <Posts/>
@@ -15,6 +15,7 @@ export default function PostsList({animals,addLikes,deleteAnimal}) {
       key={animal.id}
       addLikes={addLikes}
       deleteAnimal={deleteAnimal}
+      url={url}
       />)}</ul>
     </div>
 

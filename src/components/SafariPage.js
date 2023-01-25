@@ -60,7 +60,7 @@ export default function SafariPage() {
             updateSearchAnimals={updateSearchAnimals}
             className='search-animals'
           />
-          <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
+          <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes} url={url}/>
         </Route>
         <Route path="/pictures">
           <Pictures />
