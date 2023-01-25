@@ -46,7 +46,6 @@ export default function SafariPage() {
   });
   return (
     <div>
-<<<<<<< HEAD
       <Header />
       <Switch>
       <Route exact path="/">
@@ -60,7 +59,6 @@ export default function SafariPage() {
           <NewAnimalForm addNewAnimal={addNewAnimal}/>
         </Route>
       </Switch>
-=======
         <Header />
         <Search 
           searchAnimals={searchAnimals}
@@ -69,7 +67,6 @@ export default function SafariPage() {
         />
         <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>
         <PostsList animals={filteredAnimals}/>
->>>>>>> 1cdfb2cfbba7814b67de1ee2845c9769d6e93a7b
     </div>
   )
 }
