@@ -11,7 +11,7 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
       },
       body: JSON.stringify({likes:animal.likes+ 1})
     })
-    .then(response => response.json()) 
+    .then(response => response.json())
     .then(addLikes)
 
   }
@@ -34,7 +34,7 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
           <button className='Likes' onClick={handleLikes}>{likes}🐾</button>
           <button className='Delete' onClick={handleDelete}>Delete</button>
         </div>
-      
+      <Comments comments={animal.comments}/>
     </li>
   )
 }

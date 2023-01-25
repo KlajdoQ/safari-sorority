@@ -6,7 +6,11 @@
       "type": "Mammal",
       "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 9
+      "likes": 9,
+      "comments": [
+        "omg such a cute Bunny",
+        "cutie pie"
+      ]
     },
     {
       "id": 3,
@@ -14,7 +18,11 @@
       "type": "Mammal",
       "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 6
+      "likes": 6,
+      "comments": [
+        "omg such a cute Bunny",
+        "cutie pie"
+      ]
     },
     {
       "id": 4,
@@ -22,7 +30,11 @@
       "type": "Mammal",
       "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 6
+      "likes": 6,
+      "comments": [
+        "omg such a cute Bunny",
+        "cutie pie"
+      ]
     },
     {
       "name": "test",
