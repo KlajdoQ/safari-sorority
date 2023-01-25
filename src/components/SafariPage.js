@@ -7,7 +7,8 @@ import { Switch, Route } from "react-router-dom"
 
 
 export default function SafariPage() {
-  const [animals, setAnimals] = useState([])
+  const [animals, setAnimals] = useState([{comments:[], name: ""}])
+  const [searchAnimals, setSearch] = useState("")
 
   const url = 'http://localhost:3000/animals'
   useEffect(() => {
@@ -23,7 +24,6 @@ export default function SafariPage() {
     const newData = [...animals, newAnimal]
     setAnimals(newData)
   }
-  const [searchAnimals, setSearch] = useState("")
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
@@ -53,9 +53,9 @@ export default function SafariPage() {
       <Header />
       <Switch>
       <Route exact path="/">
-          <Search 
+          <Search
             searchAnimals={searchAnimals}
-            updateSearchAnimals={updateSearchAnimals}  
+            updateSearchAnimals={updateSearchAnimals}
             className='search-animals'
           />
           <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import CommentSection from "./CommentSection"
+import NewComments from "./NewComments"
 
 
 export default function Posts({animal,addLikes,deleteAnimal}) {
@@ -24,6 +26,17 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
       .then(deleteAnimal(animal))
   }
 
+  // COMMENT SECTION, COMMENT, AND NEWCOMMENT
+  // FUNCTIONS, USESTATES, AND CB FUNCS
+  const [comments, setComments] = useState(animal.comments)
+//    setComments(animal.comments)
+
+
+   const addNewComment = (newComment) => {
+      const newData = [...comments, ...newComment];
+      setComments(newData)
+   }
+
   return (
     <li className="posts">
       <img className= "animal-image" src={image} alt={animal.name} />
@@ -34,7 +47,8 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
           <button className='Likes' onClick={handleLikes}>{likes}🐾</button>
           <button className='Delete' onClick={handleDelete}>Delete</button>
         </div>
-      <Comments comments={animal.comments}/>
+      <CommentSection comments={comments}/>
+      <NewComments id={id} addNewComment={addNewComment}/>
     </li>
   )
 }

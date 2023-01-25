@@ -161,6 +161,18 @@ nav .navLinks:active {
   border-bottom: 2px solid brown ;
 }
 
+/* end of navbar css */
 
 
-/* end of navar css */
+
+/* comments css */
+
+.commment li {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* end of comments */
+
