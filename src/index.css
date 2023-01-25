@@ -48,8 +48,8 @@ code {
   border-radius:20px;
   box-shadow:0 5px 5px rgba(0,0,0,0.3);
   outline: none;
-  
 }
+
                      /*=== Post ===*/
 
 .animal-image {
@@ -134,16 +134,20 @@ code {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top:90px;
 }
 /* end of form css */
 
 
 /* navbar css */
 
-
+nav {
+  position:absolute;
+  right:10px;
+}
 nav .navLinks {
   display: inline-block;
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
   text-decoration: none;
   font-size: 1.2em;
   color: whitesmoke;

@@ -3,7 +3,7 @@ import React, { useState } from "react"
 
 
 function NewAnimalForm({ addNewAnimal, url }) {
-    const [showForm, setShowForm] = useState(false)
+
     const initialData = {
         name: "",
         type: "",
@@ -44,13 +44,10 @@ function NewAnimalForm({ addNewAnimal, url }) {
 
         setFormData(initialData)
     }
-    function showTheForm() {
-        setShowForm(prev =>!prev)
-    }
+
     return (
         <div className="form">
-            <button className="add-animal-btn" onClick={showTheForm}>Add Animal</button>
-        {showForm &&(
+      
         <div className="new-animal-form">
             <h2 id="form-heading">New Animal 🐾</h2>
             <form  className="form"onSubmit={(e) => {
@@ -64,7 +61,7 @@ function NewAnimalForm({ addNewAnimal, url }) {
                 <button id="spaceDefault" className="submitBtn" type="submit">Add New Animal</button>
             </form>
         </div>
-               )}
+           
         </div>
     )
 }
