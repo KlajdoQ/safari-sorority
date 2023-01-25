@@ -85,5 +85,28 @@ code {
   border-radius: 5px;
 }
 
-
 /* end of form css */
+
+
+/* navbar css */
+
+
+nav .navLinks {
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: brown;
+  border-bottom: 2px solid brown;
+  transition: 0.1s;
+}
+
+nav .navLinks:hover,
+nav .navLinks:active {
+  color: rgb(129, 186, 186) ;
+  border-bottom: 2px solid rgb(129, 186, 186) ;
+}
+
+
+
+/* end of navar css */
