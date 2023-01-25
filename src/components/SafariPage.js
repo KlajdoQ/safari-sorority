@@ -53,7 +53,7 @@ export default function SafariPage() {
       <Header />
       <Switch>
       <Route exact path="/">
-          <PostsList animals={filteredAnimals}/>
+          <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
         </Route>
         <Route path="/search">
           <Search 

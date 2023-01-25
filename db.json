@@ -1,12 +1,20 @@
 {
   "animals": [
     {
+      "id": 2,
+      "name": "Bunny",
+      "type": "Mammal",
+      "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
+      "likes": 9
+    },
+    {
       "id": 3,
       "name": "Bunny",
       "type": "Mammal",
       "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 7
+      "likes": 6
     },
     {
       "id": 4,

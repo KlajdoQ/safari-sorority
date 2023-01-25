@@ -136,3 +136,27 @@ code {
   flex-direction: column;
 }
 /* end of form css */
+
+
+/* navbar css */
+
+
+nav .navLinks {
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  transition: 0.1s;
+}
+
+nav .navLinks:hover,
+nav .navLinks:active {
+  color: brown ;
+  border-bottom: 2px solid brown ;
+}
+
+
+
+/* end of navar css */
