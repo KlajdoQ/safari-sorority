@@ -54,7 +54,7 @@ code {
                      /*=== Post ===*/
 
 .animal-image {
-  width: 400px;
+  width: 450px;
 }
 .Posts {
   list-style: none;
@@ -64,7 +64,7 @@ code {
   justify-content: center;
 }
 .posts {
-  width:400px;
+  width:450px;
   border:1px solid lightgray;
   margin:20px;
   border-radius: 20px;
@@ -176,13 +176,26 @@ nav .navLinks:active {
   margin-bottom: 20px;
   width: 150px;
   height:25px;
-
   border:1px solid orange;
   overflow: hidden;
   box-shadow:0 5px 5px rgba(0,0,0,0.5)
 }
-
-
+.comment_container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:10px;
+}
+.comment_input {
+  height:25px;
+  margin: 0 20px;
+  width:220px;
+  padding-left:10px;
+  outline:none;
+}
+.comment-section {
+  margin-top:10px;
+}
 /* end of comments */
 
 
