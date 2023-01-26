@@ -2,11 +2,12 @@ import React from "react";
 // import { useState } from "react";
 import Comment from "./Comment"
 
-function CommentSection({comments}) {
+function CommentSection({comments, value5}) {
 const commentSection = comments.map(comment => {
     return <Comment
         comment={comment}
         key={comment}
+        value5={value5}
     />
 })
 
