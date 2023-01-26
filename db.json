@@ -1,15 +1,53 @@
 {
   "animals": [
     {
+      "name": "Bella",
+      "type": "Cat ",
+      "description": "The fluffiest of all ",
+      "image": "https://images.unsplash.com/photo-1628988749208-82131f6d6425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+      "likes": 1,
+      "comments": [
+        "so beautiful "
+      ],
+      "id": 4
+    },
+    {
+      "name": "Milo",
+      "type": "White Tiger",
+      "description": "Very rare, creamy white fur; blue eyes; and gray or brownish stripes.",
+      "image": "https://images.unsplash.com/photo-1629668421359-57f1816e3c26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2091&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 3
+    },
+    {
+      "name": "Max",
+      "type": "Squirrel",
+      "description": "Squirrels may pretend to bury a nut to throw off potential thieves.",
+      "image": "https://images.unsplash.com/photo-1555010133-d883506aedee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1090&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 1
+    },
+    {
+      "name": "Pen",
+      "type": "Swan",
+      "description": "White Swan",
+      "image": "https://images.unsplash.com/photo-1644195543725-d7c2a7281287?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 2
+    },
+    {
       "name": "Donald",
       "type": "Duckling",
       "description": "A duck is a small type of swimming bird with a short neck and legs. They have webbed feet to help them swim and broad and flat bills, which they use to feed. They can live in freshwater or seawater and their feathers are waterproof! Male and female ducks often have very different appearances.",
       "image": "https://i.postimg.cc/2Srw5SGc/pexels-pixabay-162140.jpg",
-      "likes": 0,
+      "likes": 3,
       "comments": [
         "yesss"
       ],
-      "id": 5
+      "id": 11
     },
     {
       "name": "Pascal ",
@@ -18,9 +56,13 @@
       "image": "https://i.postimg.cc/NMvNckKV/pexels-pixabay-62289.jpg",
       "likes": 0,
       "comments": [
+<<<<<<< HEAD
         "oh my goodness"
+=======
+        "so green "
+>>>>>>> c1fea372770c62a61a0066ba947f28bbc3602c5e
       ],
-      "id": 6
+      "id": 10
     },
     {
       "name": "Buggs & Lola",
@@ -28,8 +70,10 @@
       "description": "Rabbits(bunnnies) are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs. They have 2 pairs of sharp incisors (front teeth), one pair on top and one pair on the bottom. They also have 2 peg teeth behind the top incisors.",
       "image": "https://i.postimg.cc/R0YRR55w/pexels-pixabay-33152.jpg",
       "likes": 0,
-      "comments": [],
-      "id": 7
+      "comments": [
+        "best friend goals"
+      ],
+      "id": 9
     },
     {
       "name": "Jason Vorhees",
@@ -37,10 +81,15 @@
       "description": "A dog is a domestic mammal of the family Canidae and the order Carnivora. Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.",
       "image": "https://i.postimg.cc/Vkmr37Bp/pexels-dominika-roseclay-2023384.jpg",
       "likes": 0,
+<<<<<<< HEAD
       "comments": [
         "yesss"
       ],
       "id": 9
+=======
+      "comments": [],
+      "id": 8
+>>>>>>> c1fea372770c62a61a0066ba947f28bbc3602c5e
     },
     {
       "name": "Fred Kruger",
@@ -49,7 +98,7 @@
       "image": "https://i.postimg.cc/sgr6bRLz/pexels-pixabay-416160.jpg",
       "likes": 0,
       "comments": [],
-      "id": 10
+      "id": 7
     },
     {
       "name": "Thumper",
@@ -58,7 +107,7 @@
       "image": "https://i.postimg.cc/tJf0FmRT/pexels-pixabay-326012.jpg",
       "likes": 0,
       "comments": [],
-      "id": 11
+      "id": 6
     },
     {
       "name": "Micheal",
@@ -69,7 +118,7 @@
       "comments": [
         "oh my god so handsome "
       ],
-      "id": 12
+      "id": 5
     }
   ]
 }

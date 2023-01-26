@@ -22,7 +22,7 @@ export default function SafariPage() {
 
  // ADDING NEW ANIMAL (FORM CB FUNCTION)
   const addNewAnimal = (newAnimal) => {
-    const newData = [...animals, newAnimal]
+    const newData = [newAnimal, ...animals ]
     setAnimals(newData)
   }
 

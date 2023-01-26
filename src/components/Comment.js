@@ -8,7 +8,7 @@ function Comment({comment, value5}) {
     return (
         <>
         <div className="comment">
-        <em>👤user{value5}:</em><br/>
+      <em>👤user{value5}:</em><br/>
         {comment}
         </div>
         </>
