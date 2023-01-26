@@ -1,8 +1,7 @@
 {
   "animals": [
     {
-<<<<<<< HEAD
-=======
+
       "name": "Bella",
       "type": "Cat ",
       "description": "The fluffiest of all ",
@@ -41,7 +40,6 @@
       "id": 2
     },
     {
->>>>>>> 15eb4b5e9f986e03ddad261701f8d2875773691a
       "name": "Donald",
       "type": "Duckling",
       "description": "A duck is a small type of swimming bird with a short neck and legs. They have webbed feet to help them swim and broad and flat bills, which they use to feed. They can live in freshwater or seawater and their feathers are waterproof! Male and female ducks often have very different appearances.",
