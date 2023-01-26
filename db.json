@@ -1,7 +1,7 @@
 {
   "animals": [
     {
-      "0": "yesss",
+      "0": "oh my goodness",
       "id": 2,
       "name": "Bunny",
       "type": "Mammal",
@@ -9,8 +9,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
       "likes": 9,
       "comments": [
-        "omg such a cute Bunny",
-        "cutie pie"
+        "yesss"
       ]
     },
     {
@@ -26,6 +25,7 @@
       ]
     },
     {
+      "0": "oh my goodness",
       "id": 4,
       "name": "Bunny",
       "type": "Mammal",

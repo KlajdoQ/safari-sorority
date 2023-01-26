@@ -11,10 +11,12 @@ function NewComments({id, addNewComment, url}) {
    const handleCommentSubmit = (e) => {
     e.preventDefault();
 
-    const newComment = [createComment]
+    const newComment = {
+        comments: [createComment]
+   }
 
     addNewComment(newComment)
-    
+
     fetch(`${url}/${id}`, {
         method: "PATCH",
         headers: {
