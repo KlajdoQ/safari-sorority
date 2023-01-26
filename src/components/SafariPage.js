@@ -50,7 +50,7 @@ export default function SafariPage() {
     }
   });
   return (
-    <div>
+    <div className='main'>
       <Header />
       <Switch>
       <Route exact path="/">

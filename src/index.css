@@ -69,7 +69,8 @@ code {
   margin:20px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow:0 5px 5px rgba(0,0,0,0.5)
+  box-shadow:0 5px 5px rgba(0,0,0,0.5);
+  background-color: green;
 }
 .name {
   font-style: italic;
@@ -93,6 +94,7 @@ code {
 }
 .comment__textarea{
   width: 200px;
+
 }
 .Likes {
   background-color: orange;
@@ -110,6 +112,11 @@ code {
 .Delete {
   padding:10px;
   background-color: orange;
+}
+
+.Likes:hover, .Delete:hover, .post-comment-btn:hover{
+background-color: greenyellow;
+transition: 1.0s;
 }
 /* Form css */
 .add-animal-btn {
@@ -170,7 +177,7 @@ nav .navLinks:active {
 /* comments css */
 
 .comment  {
-  background-color:white;
+  background-color:yellow;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -189,7 +196,7 @@ nav .navLinks:active {
 .comment_input {
   height:25px;
   margin: 0 20px;
-  width:220px;
+  width:280px;
   padding-left:10px;
   outline:none;
 }
@@ -209,3 +216,6 @@ nav .navLinks:active {
   margin:30px;
 }
 
+.main{
+  background-image: url(https://images4.alphacoders.com/932/932271.jpg);
+}
