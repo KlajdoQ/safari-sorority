@@ -3,10 +3,10 @@ import React from "react";
 import Comment from "./Comment"
 
 function CommentSection({comments}) {
-const commentSection = comments.map(comment => {
+const commentSection = comments.map((comment,index) => {
     return <Comment
         comment={comment}
-        key={comment}
+        key={index}
     />
 })
 
