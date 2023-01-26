@@ -8,15 +8,15 @@ export default function Header() {
     <div className="header">
         <img src={logo} alt="logo" className="ss-logo"/>
         <img src={name} alt="name" className="ss-name"/>
-        <nav>
+        <nav className="list">
           <Link className="navLinks" to="/">
-            View Animals
+            <p className='listItem'>View Animals</p>
           </Link>
           <Link className="navLinks" to="/pictures">
-            Pictures
+            <p className="listItem">Pictures</p>
           </Link>
           <Link className="navLinks" to="/new">
-            Add Animal
+            <p className="listItem">Add Animal</p>
           </Link>
         </nav>
     </div>

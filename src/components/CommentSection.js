@@ -2,11 +2,13 @@ import React from "react";
 // import { useState } from "react";
 import Comment from "./Comment"
 
-function CommentSection({comments}) {
-const commentSection = comments.map((comment,index) => {
+
+function CommentSection({comments, value5}) {
+const commentSection = comments.map(comment => {
     return <Comment
         comment={comment}
-        key={index}
+        key={comment}
+        value5={value5}
     />
 })
 
