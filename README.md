@@ -24,7 +24,7 @@ Client-routing is used to display the search and form functionalities.
 
 ## Technologies
 
-Since this application is an exercise in our team's ability to work with React, our application is made of React components that are centralized in the App.js file which is rendered to the HTML file.  No HTML is hardcoded but instead is rendered with JSX throughout the various React components.
+Since this application is an exercise in our team's ability to work with React, our application is made of React components that are centralized in the App.js file which is rendered to the HTML file.  No HTML is hardcoded but instead is rendered with JSX throughout the various React components. hi
 
 All styling is done with vanilla CSS and is located in a separate CSS file.
 
