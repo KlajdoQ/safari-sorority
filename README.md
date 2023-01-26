@@ -13,8 +13,9 @@ This application allows users to view the posts made to Safari Sorority as soon 
 * a description of the post
 * the amount of likes it received
 * any comments made
+* a delete button
 
-When users click on the paw print for a post, the number of likes increases by one.  If a user chooses to write and enter a comment, the comment is listed under the post.  All changes are updated in the db.json file as they occur.
+When users click on the paw print for a post, the number of likes increases by one.  If a user chooses to write and enter a comment, the comment is listed under the post.  All changes are updated in the db.json file as they occur. Additional comments can be made. Finally, if a user clicks the delete button, then the animal will be deleted from both the front and backend.
 
 When users click on the form button, a form will appear which will prompt the user to enter values for each of the inputs.  Upon submission, a card is created for the post, and it is added to the top of the list of posts as well as being added to the db.json file.
 
@@ -24,7 +25,7 @@ Client-routing is used to display the search and form functionalities.
 
 ## Technologies
 
-Since this application is an exercise in our team's ability to work with React, our application is made of React components that are centralized in the App.js file which is rendered to the HTML file.  No HTML is hardcoded but instead is rendered with JSX throughout the various React components. hi
+Since this application is an exercise in our team's ability to work with React, our application is made of React components that are centralized in the App.js file which is rendered to the HTML file.  No HTML is hardcoded but instead is rendered with JSX throughout the various React components.
 
 All styling is done with vanilla CSS and is located in a separate CSS file.
 
