@@ -5,8 +5,10 @@
       "type": "Cat ",
       "description": "The fluffiest of all ",
       "image": "https://images.unsplash.com/photo-1628988749208-82131f6d6425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
-      "likes": 0,
-      "comments": [],
+      "likes": 1,
+      "comments": [
+        "so beautiful "
+      ],
       "id": 4
     },
     {
@@ -107,6 +109,5 @@
       ],
       "id": 5
     }
-    
   ]
 }
