@@ -209,7 +209,7 @@ nav .navLinks:active {
 }
 
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:850px) {
   .ss-logo {
     width:70px;
     margin-top:15px;
@@ -225,7 +225,7 @@ nav .navLinks:active {
     flex-direction: row;
     background-color:  rgb(229, 120, 65);
     margin-top:150px;
-    margin-right:70px;
+    margin-right:210px;
     width:300px;
     height:50px;
     border-radius:20px;
