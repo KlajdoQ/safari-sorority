@@ -39,6 +39,7 @@ code {
 }
 .search {
   font-size:40px;
+  color: chartreuse;
 }
 .input-text {
   width:300px;
@@ -119,11 +120,12 @@ background-color: greenyellow;
 transition: 1.0s;
 }
 /* Form css */
-.add-animal-btn {
+.add-animal-btn:hover {
   margin:10px;
   border:none;
   padding:10px 20px;
   font-weight: 600;
+
 }
 #spaceDefault {
   margin-bottom: 20px;
@@ -176,11 +178,11 @@ nav .navLinks:active {
 /* comments css */
 
 .comment  {
-  background-color:yellow;
+  background-color:#FFD700;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
-  width: 150px;
+  width: 255px;
   height:25px;
   border:1px solid orange;
   overflow: hidden;
@@ -215,8 +217,12 @@ nav .navLinks:active {
   margin:30px;
 }
 
+
 .main{
   background-image: url(https://images4.alphacoders.com/932/932271.jpg);
+  height: 100%;
+  width: 100%;
+  
 }
 @media only screen and (max-width:850px) {
   .ss-logo {
