@@ -1,6 +1,47 @@
 {
   "animals": [
     {
+<<<<<<< HEAD
+=======
+      "name": "Bella",
+      "type": "Cat ",
+      "description": "The fluffiest of all ",
+      "image": "https://images.unsplash.com/photo-1628988749208-82131f6d6425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+      "likes": 1,
+      "comments": [
+        "fluffy"
+      ],
+      "id": 4
+    },
+    {
+      "name": "Milo",
+      "type": "White Tiger",
+      "description": "Very rare, creamy white fur; blue eyes; and gray or brownish stripes.",
+      "image": "https://images.unsplash.com/photo-1629668421359-57f1816e3c26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2091&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 3
+    },
+    {
+      "name": "Max",
+      "type": "Squirrel",
+      "description": "Squirrels may pretend to bury a nut to throw off potential thieves.",
+      "image": "https://images.unsplash.com/photo-1555010133-d883506aedee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1090&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 1
+    },
+    {
+      "name": "Pen",
+      "type": "Swan",
+      "description": "White Swan",
+      "image": "https://images.unsplash.com/photo-1644195543725-d7c2a7281287?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 2
+    },
+    {
+>>>>>>> 15eb4b5e9f986e03ddad261701f8d2875773691a
       "name": "Donald",
       "type": "Duckling",
       "description": "A duck is a small type of swimming bird with a short neck and legs. They have webbed feet to help them swim and broad and flat bills, which they use to feed. They can live in freshwater or seawater and their feathers are waterproof! Male and female ducks often have very different appearances.",
