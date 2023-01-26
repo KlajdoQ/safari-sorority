@@ -33,8 +33,8 @@ function NewComments({id, addNewComment, url}) {
 }
 
     return (
-        <div className="comment__container">
-            <form onSubmit={handleCommentSubmit}>
+        <div >
+            <form onSubmit={handleCommentSubmit}className="comment_container">
                 <input
                     className="comment_input"
                     type="text"
