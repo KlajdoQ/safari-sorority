@@ -4,7 +4,7 @@ import React from "react";
 function Search({searchAnimals, updateSearchAnimals}) {
   return (
     <div className="searchbar">
-      <label className="search"htmlFor="search">Search Animals</label>
+      <label className="search" htmlFor="search">Search Animals</label>
       <input
         type="text"
         className="input-text"

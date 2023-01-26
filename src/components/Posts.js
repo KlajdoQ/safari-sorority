@@ -8,18 +8,18 @@ function generateRandomIntegerInRange(min, max) {
 
 let value5 = generateRandomIntegerInRange(10000, 20000);
 
- function Posts({animal,addLikes,deleteAnimal, url}) {
-  const{name, type, description, id,likes,image} = animal
+function Posts({ animal, addLikes, deleteAnimal, url }) {
+  const { name, type, description, id, likes, image } = animal
   const handleLikes = () => {
-    fetch(`http://localhost:3000/animals/${id}`,{
+    fetch(`http://localhost:3000/animals/${id}`, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json'
       },
-      body: JSON.stringify({likes:animal.likes+ 1})
+      body: JSON.stringify({ likes: animal.likes + 1 })
     })
-    .then(response => response.json())
-    .then(addLikes)
+      .then(response => response.json())
+      .then(addLikes)
 
   }
 
@@ -34,18 +34,18 @@ let value5 = generateRandomIntegerInRange(10000, 20000);
   // COMMENT SECTION, COMMENT, AND NEW COMMENT
   // FUNCTIONS, USESTATES, AND CB FUNCS
   const [comments, setComments] = useState(animal.comments)
-//    setComments(animal.comments)
+  //    setComments(animal.comments)
 
 
-   const addNewComment = (newComment) => {
-      const newData = [...comments, ...newComment.comments];
-      setComments(newData)
-   }
+  const addNewComment = (newComment) => {
+    const newData = [...comments, ...newComment.comments];
+    setComments(newData)
+  }
 
 
   return (
     <li className="posts">
-      <img className= "animal-image" src={image} alt={animal.name} />
+      <img className="animal-image" src={image} alt={animal.name} />
       <h2 className='name'>{name}</h2>
       <h4 className='type'>{type}</h4>
       <p className='description'><i>{description}</i> </p>
