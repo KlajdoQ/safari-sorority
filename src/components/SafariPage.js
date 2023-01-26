@@ -3,11 +3,13 @@ import Header from './Header/Header'
 import Search from './Search'
 import NewAnimalForm from "./NewAnimalForm"
 import PostsList from './PostsList'
+import Pictures from './Pictures'
 import { Switch, Route } from "react-router-dom"
 
 
 export default function SafariPage() {
   const [animals, setAnimals] = useState([])
+  const [searchAnimals, setSearch] = useState("")
 
   const url = 'http://localhost:3000/animals'
   useEffect(() => {
@@ -20,10 +22,9 @@ export default function SafariPage() {
 
  // ADDING NEW ANIMAL (FORM CB FUNCTION)
   const addNewAnimal = (newAnimal) => {
-    const newData = [...animals, newAnimal]
+    const newData = [newAnimal, ...animals ]
     setAnimals(newData)
   }
-  const [searchAnimals, setSearch] = useState("")
 
   const updateSearchAnimals = (searchInput) => {
     setSearch(searchInput)
@@ -56,11 +57,16 @@ export default function SafariPage() {
           <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes}/>
         </Route>
         <Route path="/search">
-          <Search 
+          <Search
             searchAnimals={searchAnimals}
-            updateSearchAnimals={updateSearchAnimals}  
+
+            updateSearchAnimals={updateSearchAnimals}
             className='search-animals'
           />
+          <PostsList animals={filteredAnimals} deleteAnimal={deleteAnimal} addLikes={addLikes} url={url}/>
+        </Route>
+        <Route path="/pictures">
+          <Pictures />
         </Route>
         <Route path="/new">
           <NewAnimalForm url={url} addNewAnimal={addNewAnimal}/>

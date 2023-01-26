@@ -29,7 +29,7 @@ code {
 .ss-name {
   height:80px;
 }
-                     /*===Search Bar ===*/p
+                     /*===Search Bar ===*/
 .searchbar {
   display: flex;
   align-items: center;
@@ -48,12 +48,13 @@ code {
   border-radius:20px;
   box-shadow:0 5px 5px rgba(0,0,0,0.3);
   outline: none;
+  margin-top:20px;
 }
 
                      /*=== Post ===*/
 
 .animal-image {
-  width: 400px;
+  width: 450px;
 }
 .Posts {
   list-style: none;
@@ -63,7 +64,7 @@ code {
   justify-content: center;
 }
 .posts {
-  width:400px;
+  width:450px;
   border:1px solid lightgray;
   margin:20px;
   border-radius: 20px;
@@ -149,7 +150,7 @@ nav .navLinks {
   display: inline-block;
   margin: 1rem 1rem;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size:17px;
   color: whitesmoke;
   border-bottom: 2px solid whitesmoke;
   transition: 0.1s;
@@ -161,6 +162,50 @@ nav .navLinks:active {
   border-bottom: 2px solid brown ;
 }
 
+/* end of navbar css */
+
+
+
+
+/* comments css */
+
+.comment  {
+  background-color:white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height:25px;
+  border:1px solid orange;
+  overflow: hidden;
+  box-shadow:0 5px 5px rgba(0,0,0,0.5)
+}
+.comment_container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:10px;
+}
+.comment_input {
+  height:25px;
+  margin: 0 20px;
+  width:220px;
+  padding-left:10px;
+  outline:none;
+}
+.comment-section {
+  margin-top:10px;
+}
+/* end of comments */
 
 
 /* end of navar css */
+.image {
+  width:300px;
+  margin:10px;
+}
+.Pictures {
+  display:inline-block;
+  margin:30px;
+}
+

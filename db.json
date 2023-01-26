@@ -1,44 +1,112 @@
 {
   "animals": [
     {
-      "id": 2,
-      "name": "Bunny",
-      "type": "Mammal",
-      "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 9
-    },
-    {
-      "id": 3,
-      "name": "Bunny",
-      "type": "Mammal",
-      "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 6
-    },
-    {
-      "id": 4,
-      "name": "Bunny",
-      "type": "Mammal",
-      "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiDjSRUt1UOztHJx49EzG3ty9WtQGfz2a0Q&usqp=CAU",
-      "likes": 6
-    },
-    {
-      "name": "test",
-      "type": "test",
-      "description": "test",
-      "image": "teset",
+      "name": "Bella",
+      "type": "Cat ",
+      "description": "The fluffiest of all ",
+      "image": "https://images.unsplash.com/photo-1628988749208-82131f6d6425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
       "likes": 0,
-      "id": 5
+      "comments": [],
+      "id": 4
     },
     {
-      "name": "test",
-      "type": "tese",
-      "description": "set",
-      "image": "ste",
+      "name": "Milo",
+      "type": "White Tiger",
+      "description": "Very rare, creamy white fur; blue eyes; and gray or brownish stripes.",
+      "image": "https://images.unsplash.com/photo-1629668421359-57f1816e3c26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2091&q=80",
       "likes": 0,
+      "comments": [],
+      "id": 3
+    },
+    {
+      "name": "Max",
+      "type": "Squirrel",
+      "description": "Squirrels may pretend to bury a nut to throw off potential thieves.",
+      "image": "https://images.unsplash.com/photo-1555010133-d883506aedee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1090&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 1
+    },
+    {
+      "name": "Pen",
+      "type": "Swan",
+      "description": "White Swan",
+      "image": "https://images.unsplash.com/photo-1644195543725-d7c2a7281287?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "likes": 0,
+      "comments": [],
+      "id": 2
+    },
+    {
+      "name": "Donald",
+      "type": "Duckling",
+      "description": "A duck is a small type of swimming bird with a short neck and legs. They have webbed feet to help them swim and broad and flat bills, which they use to feed. They can live in freshwater or seawater and their feathers are waterproof! Male and female ducks often have very different appearances.",
+      "image": "https://i.postimg.cc/2Srw5SGc/pexels-pixabay-162140.jpg",
+      "likes": 3,
+      "comments": [
+        "yesss"
+      ],
+      "id": 11
+    },
+    {
+      "name": "Pascal ",
+      "type": "Yellow and Green Coated Lizard",
+      "description": "Lizards are scaly-skinned reptiles that are usually distinguished from snakes by the possession of legs, movable eyelids, and external ear openings. However, some traditional (that is, non-snake) lizards lack one or more of these features.",
+      "image": "https://i.postimg.cc/NMvNckKV/pexels-pixabay-62289.jpg",
+      "likes": 0,
+      "comments": [
+        "so green "
+      ],
+      "id": 10
+    },
+    {
+      "name": "Buggs & Lola",
+      "type": "Bunnies",
+      "description": "Rabbits(bunnnies) are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs. They have 2 pairs of sharp incisors (front teeth), one pair on top and one pair on the bottom. They also have 2 peg teeth behind the top incisors.",
+      "image": "https://i.postimg.cc/R0YRR55w/pexels-pixabay-33152.jpg",
+      "likes": 0,
+      "comments": [
+        "best friend goals"
+      ],
+      "id": 9
+    },
+    {
+      "name": "Jason Vorhees",
+      "type": "Black and Brown Puppy",
+      "description": "A dog is a domestic mammal of the family Canidae and the order Carnivora. Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.",
+      "image": "https://i.postimg.cc/Vkmr37Bp/pexels-dominika-roseclay-2023384.jpg",
+      "likes": 0,
+      "comments": [],
+      "id": 8
+    },
+    {
+      "name": "Fred Kruger",
+      "type": "Cat",
+      "description": "A cat is a furry animal that has a long tail and sharp claws. Cats are often kept as pets. countable noun. Cats are lions, tigers, and other wild animals in the same family. The lion is perhaps the most famous member of the cat family.",
+      "image": "https://i.postimg.cc/sgr6bRLz/pexels-pixabay-416160.jpg",
+      "likes": 0,
+      "comments": [],
+      "id": 7
+    },
+    {
+      "name": "Thumper",
+      "type": "Buuny",
+      "description": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs.",
+      "image": "https://i.postimg.cc/tJf0FmRT/pexels-pixabay-326012.jpg",
+      "likes": 0,
+      "comments": [],
       "id": 6
+    },
+    {
+      "name": "Micheal",
+      "type": "Dog",
+      "description": "A dog is a domestic mammal of the family Canidae and the order Carnivora. Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.",
+      "image": "https://i.postimg.cc/d1YGVq8Q/pexels-lumn-406014.jpg",
+      "likes": 0,
+      "comments": [
+        "oh my god so handsome "
+      ],
+      "id": 5
     }
+    
   ]
 }

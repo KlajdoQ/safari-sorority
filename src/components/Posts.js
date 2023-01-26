@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import CommentSection from "./CommentSection"
+import NewComments from "./NewComments"
 
 
-export default function Posts({animal,addLikes,deleteAnimal}) {
+
+ function Posts({animal,addLikes,deleteAnimal, url}) {
   const{name, type, description, id,likes,image} = animal
   const handleLikes = () => {
     fetch(`http://localhost:3000/animals/${id}`,{
@@ -11,7 +14,7 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
       },
       body: JSON.stringify({likes:animal.likes+ 1})
     })
-    .then(response => response.json()) 
+    .then(response => response.json())
     .then(addLikes)
 
   }
@@ -24,6 +27,17 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
       .then(deleteAnimal(animal))
   }
 
+  // COMMENT SECTION, COMMENT, AND NEW COMMENT
+  // FUNCTIONS, USESTATES, AND CB FUNCS
+  const [comments, setComments] = useState(animal.comments)
+//    setComments(animal.comments)
+
+
+   const addNewComment = (newComment) => {
+      const newData = [...comments, ...newComment.comments];
+      setComments(newData)
+   }
+
   return (
     <li className="posts">
       <img className= "animal-image" src={image} alt={animal.name} />
@@ -34,7 +48,10 @@ export default function Posts({animal,addLikes,deleteAnimal}) {
           <button className='Likes' onClick={handleLikes}>{likes}🐾</button>
           <button className='Delete' onClick={handleDelete}>Delete</button>
         </div>
-      
+      <CommentSection comments={comments}/>
+      <NewComments id={id} addNewComment={addNewComment} url={url}/>
     </li>
   )
 }
+
+export default Posts
