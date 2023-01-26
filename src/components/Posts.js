@@ -3,6 +3,7 @@ import CommentSection from "./CommentSection"
 import NewComments from "./NewComments"
 
 
+
  function Posts({animal,addLikes,deleteAnimal, url}) {
   const{name, type, description, id,likes,image} = animal
   const handleLikes = () => {
@@ -26,7 +27,7 @@ import NewComments from "./NewComments"
       .then(deleteAnimal(animal))
   }
 
-  // COMMENT SECTION, COMMENT, AND NEWCOMMENT
+  // COMMENT SECTION, COMMENT, AND NEW COMMENT
   // FUNCTIONS, USESTATES, AND CB FUNCS
   const [comments, setComments] = useState(animal.comments)
 //    setComments(animal.comments)
