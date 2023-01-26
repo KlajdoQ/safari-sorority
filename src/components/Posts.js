@@ -42,6 +42,7 @@ let value5 = generateRandomIntegerInRange(10000, 20000);
       setComments(newData)
    }
 
+
   return (
     <li className="posts">
       <img className= "animal-image" src={image} alt={animal.name} />
@@ -52,8 +53,8 @@ let value5 = generateRandomIntegerInRange(10000, 20000);
           <button className='Likes' onClick={handleLikes}>{likes}🐾</button>
           <button className='Delete' onClick={handleDelete}>Delete</button>
         </div>
-      <CommentSection value5={value5} comments={comments}/>
-      <NewComments  generateRandomIntegerInRange={generateRandomIntegerInRange} id={id} addNewComment={addNewComment} url={url}/>
+      <CommentSection  value5={value5} comments={comments}/>
+      <NewComments   url={url} addNewComment={addNewComment}/>
     </li>
   )
 }
