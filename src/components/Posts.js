@@ -2,7 +2,11 @@ import React, { useState } from 'react'
 import CommentSection from "./CommentSection"
 import NewComments from "./NewComments"
 
+function generateRandomIntegerInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
+let value5 = generateRandomIntegerInRange(10000, 20000);
 
 function Posts({ animal, addLikes, deleteAnimal, url }) {
   const { name, type, description, id, likes, image } = animal

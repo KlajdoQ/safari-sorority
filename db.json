@@ -7,7 +7,7 @@
       "image": "https://images.unsplash.com/photo-1628988749208-82131f6d6425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
       "likes": 1,
       "comments": [
-        "so beautiful "
+        "fluffy"
       ],
       "id": 4
     },
@@ -58,7 +58,11 @@
       "image": "https://i.postimg.cc/NMvNckKV/pexels-pixabay-62289.jpg",
       "likes": 0,
       "comments": [
+<<<<<<< HEAD
+        "oh my goodness"
+=======
         "so green "
+>>>>>>> c1fea372770c62a61a0066ba947f28bbc3602c5e
       ],
       "id": 10
     },
@@ -79,8 +83,15 @@
       "description": "A dog is a domestic mammal of the family Canidae and the order Carnivora. Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.",
       "image": "https://i.postimg.cc/Vkmr37Bp/pexels-dominika-roseclay-2023384.jpg",
       "likes": 0,
+<<<<<<< HEAD
+      "comments": [
+        "yesss"
+      ],
+      "id": 9
+=======
       "comments": [],
       "id": 8
+>>>>>>> c1fea372770c62a61a0066ba947f28bbc3602c5e
     },
     {
       "name": "Fred Kruger",

@@ -1,10 +1,17 @@
 import React from "react"
 
-function Comment({comment}) {
+
+
+
+function Comment({comment, value5}) {
+
     return (
+        <>
         <div className="comment">
-            <p>{comment}</p>
+      <em>👤user{value5}:</em><br/>
+        {comment}
         </div>
+        </>
     )
 }
 
