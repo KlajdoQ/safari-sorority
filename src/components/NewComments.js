@@ -1,8 +1,9 @@
 import React, {useState} from "react"
 
 
-function NewComments({id, addNewComment, url, generateRandomIntegerInRange}) {
+function NewComments({id, addNewComment, url}) {
     const [createComment, setCreateComment] = useState('');
+
 
    function handleCreateComment(e) {
     setCreateComment(e.target.value)
@@ -43,7 +44,7 @@ function NewComments({id, addNewComment, url, generateRandomIntegerInRange}) {
                     value={createComment}
                     onChange={(e) => handleCreateComment(e)}
                     />
-                <button onClick={generateRandomIntegerInRange} type="submit" className="post-comment-btn">POST🐾</button>
+                <button  type="submit" className="post-comment-btn">POST🐾</button>
             </form>
         </div>
     )

@@ -10,6 +10,7 @@ function Comment({comment, value5}) {
         <div className="comment">
       <em>👤user{value5}:</em><br/>
         {comment}
+
         </div>
         </>
     )

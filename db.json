@@ -1,6 +1,7 @@
 {
   "animals": [
     {
+
       "name": "Bella",
       "type": "Cat ",
       "description": "The fluffiest of all ",
@@ -45,11 +46,11 @@
       "type": "Duckling",
       "description": "A duck is a small type of swimming bird with a short neck and legs. They have webbed feet to help them swim and broad and flat bills, which they use to feed. They can live in freshwater or seawater and their feathers are waterproof! Male and female ducks often have very different appearances.",
       "image": "https://i.postimg.cc/2Srw5SGc/pexels-pixabay-162140.jpg",
-      "likes": 3,
+      "likes": 0,
       "comments": [
-        "yesss"
+        "oh my god so handsome "
       ],
-      "id": 11
+      "id": 5
     },
     {
       "name": "Pascal ",
@@ -58,13 +59,9 @@
       "image": "https://i.postimg.cc/NMvNckKV/pexels-pixabay-62289.jpg",
       "likes": 0,
       "comments": [
-<<<<<<< HEAD
         "oh my goodness"
-=======
-        "so green "
->>>>>>> c1fea372770c62a61a0066ba947f28bbc3602c5e
       ],
-      "id": 10
+      "id": 6
     },
     {
       "name": "Buggs & Lola",
@@ -72,10 +69,8 @@
       "description": "Rabbits(bunnnies) are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs. They have 2 pairs of sharp incisors (front teeth), one pair on top and one pair on the bottom. They also have 2 peg teeth behind the top incisors.",
       "image": "https://i.postimg.cc/R0YRR55w/pexels-pixabay-33152.jpg",
       "likes": 0,
-      "comments": [
-        "best friend goals"
-      ],
-      "id": 9
+      "comments": [],
+      "id": 7
     },
     {
       "name": "Jason Vorhees",
@@ -83,15 +78,10 @@
       "description": "A dog is a domestic mammal of the family Canidae and the order Carnivora. Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.",
       "image": "https://i.postimg.cc/Vkmr37Bp/pexels-dominika-roseclay-2023384.jpg",
       "likes": 0,
-<<<<<<< HEAD
       "comments": [
         "yesss"
       ],
       "id": 9
-=======
-      "comments": [],
-      "id": 8
->>>>>>> c1fea372770c62a61a0066ba947f28bbc3602c5e
     },
     {
       "name": "Fred Kruger",
@@ -100,7 +90,7 @@
       "image": "https://i.postimg.cc/sgr6bRLz/pexels-pixabay-416160.jpg",
       "likes": 0,
       "comments": [],
-      "id": 7
+      "id": 10
     },
     {
       "name": "Thumper",
@@ -109,7 +99,7 @@
       "image": "https://i.postimg.cc/tJf0FmRT/pexels-pixabay-326012.jpg",
       "likes": 0,
       "comments": [],
-      "id": 6
+      "id": 11
     },
     {
       "name": "Micheal",
@@ -120,7 +110,7 @@
       "comments": [
         "oh my god so handsome "
       ],
-      "id": 5
+      "id": 12
     }
   ]
 }

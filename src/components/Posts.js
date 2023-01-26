@@ -42,18 +42,19 @@ function Posts({ animal, addLikes, deleteAnimal, url }) {
     setComments(newData)
   }
 
+
   return (
     <li className="posts">
       <img className="animal-image" src={image} alt={animal.name} />
       <h2 className='name'>{name}</h2>
       <h4 className='type'>{type}</h4>
       <p className='description'><i>{description}</i> </p>
-      <div className='likes-delete'>
-        <button className='Likes' onClick={handleLikes}>{likes}🐾</button>
-        <button className='Delete' onClick={handleDelete}>Delete</button>
-      </div>
-      <CommentSection comments={comments} />
-      <NewComments id={id} addNewComment={addNewComment} url={url} />
+        <div className='likes-delete'>
+          <button className='Likes' onClick={handleLikes}>{likes}🐾</button>
+          <button className='Delete' onClick={handleDelete}>Delete</button>
+        </div>
+      <CommentSection  value5={value5} comments={comments}/>
+      <NewComments   url={url} addNewComment={addNewComment}/>
     </li>
   )
 }
