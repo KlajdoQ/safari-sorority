@@ -8,14 +8,16 @@ The Safari Sorority is designed for users to create, search through, and view th
 
 This application allows users to view the posts made to Safari Sorority as soon as the page loads.  With each post, the user is able to see:
 * the animal's name
+* the type of animal
 * an image
 * a description of the post
 * the amount of likes it received
 * any comments made
+* a delete button
 
-When users click on the paw print for a post, the number of likes increases by one.  If a user chooses to write and enter a comment, the comment is listed under the post.  All changes are updated in the db.json file as they occur.
+When users click on the paw print for a post, the number of likes increases by one.  If a user chooses to write and enter a comment, the comment is listed under the post.  All changes are updated in the db.json file as they occur. Additional comments can be made. Finally, if a user clicks the delete button, then the animal will be deleted from both the front and backend.
 
-When users click on the form button, a form will appear which will prompt the user to enter values for each of the inputs.  Upon submission, a card is created for the post, and it is added to the bottom of the list of posts as well as being added to the db.json file.
+When users click on the form button, a form will appear which will prompt the user to enter values for each of the inputs.  Upon submission, a card is created for the post, and it is added to the top of the list of posts as well as being added to the db.json file.
 
 When users search for an animal or post, the list of posts displayed updates in real time with the user's typing.  The posts are filtered and are only displayed if their content matches the value being searched.
 
