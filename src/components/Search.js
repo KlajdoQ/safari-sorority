@@ -1,5 +1,5 @@
 
-import React, {useState} from "react";
+import React from "react";
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 function Search({searchAnimals, updateSearchAnimals}) {
