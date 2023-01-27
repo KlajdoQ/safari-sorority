@@ -34,7 +34,7 @@ function NewAnimalForm({ addNewAnimal, url }) {
 
         // POST REQUEST
         fetch(url, {
-            method: "POST",
+            method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
             },
