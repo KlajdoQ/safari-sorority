@@ -19,7 +19,7 @@ function NewComments({id, addNewComment, url}) {
     addNewComment(newComment)
 
     fetch(`${url}/${id}`, {
-        method: "PATCH",
+        method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
